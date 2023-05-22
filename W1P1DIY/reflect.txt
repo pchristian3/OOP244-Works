@@ -1,0 +1,32 @@
+________________________________________________________________________________________
+Full Name  : Prarthan Dhaval Christian
+Student ID#: 175063213
+Email      : pchristian3@myseneca.ca
+Section    : OOP244 ZBB
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+__________________________________________________________________________________________
+
+During the workshop, I reviewed the final solutions for each deliverable and revisited the 
+relevant parts of the course notes. I ensured that I understood the concepts covered in the 
+workshop.
+
+In Deliverable 1, I implemented various string manipulation functions such as strCpy, strnCpy, 
+strCmp, strnCmp, strLen, strStr, and strCat. These functions involved tasks like copying strings, 
+comparing strings, finding substrings, and concatenating strings. I carefully examined each function,
+considered the logic behind it, and made necessary improvements to ensure correctness and efficiency.
+
+By rereading the related parts of the course notes, I reinforced my understanding of string manipulation, 
+memory allocation, and dealing with pointers. I ensured that I grasped concepts like null-terminating strings, 
+pointer arithmetic, and iterating through strings using pointers.
+
+Overall, this exercise allowed me to deepen my knowledge and strengthen my skills in string manipulation
+and memory management in C++. I feel confident in my understanding of the workshop concepts and ready to 
+apply them in practical programming scenarios.
+
+
+
+
+
