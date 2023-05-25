@@ -36,19 +36,20 @@ namespace sdds {
     // TODO: Finish the implementation of the 1 arg load function which
     // reads one employee record from the file and loads it into the employee reference
     // argument
-    bool load(Employee& emp) {
+    bool load(Employee& emp) 
+    {
         bool ok = false;
         char empName[128];
-        if (sdds::read(emp.m_empNo) && sdds::read(emp.m_salary) && sdds::read(empName)) {
+        
+        if (sdds::read(emp.m_empNo) && sdds::read(emp.m_salary) && sdds::read(empName))
+        {
             int empLength = strlen(empName) + 1;
             emp.m_name = new char[empLength];
             strcpy(emp.m_name, empName);
             ok = true;
         }
-        else
-        {
             return ok;
-        }
+
 
     }
   
