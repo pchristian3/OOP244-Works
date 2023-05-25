@@ -10,6 +10,7 @@ I have done all the coding by myself and only copied the code that my professor 
 #include "cstring.h"  // implemented in workshop 1 part 2 (DIY)
 #include "Employee.h"
 #include "File.h"
+#include <cstring>
 
 using namespace std;
 namespace sdds {
