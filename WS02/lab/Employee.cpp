@@ -41,7 +41,7 @@ namespace sdds {
         bool ok = false;
         char empName[128];
         
-        if (sdds::read(emp.m_empNo) && sdds::read(emp.m_salary) && sdds::read(empName))
+        if (read(emp.m_empNo) && read(emp.m_salary) && read(empName))
         {
             int empLength = strlen(empName) + 1;
             emp.m_name = new char[empLength];
