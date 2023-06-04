@@ -1,0 +1,27 @@
+/*
+Name : Prarthan Dhaval Christian
+Id   : 175063213
+Email: pchristian3@myseneca.ca
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+
+In this week I mostly learned about Encapsulation. It moslty hides impementation details 
+form the clients. Also in this week I learned about member functions, adding a member
+function and privacy.
+
+This workshop was the combination of all the things which I learned in the class as well
+as I learned from the reading material for this week. Moreover, in this workshop I got to
+know about many different types of iostream functions such as width, fill, setf and unsetf.
+This workshop turned out to be very exiciting and also very helpful. To ensure the privacy
+we first call the set function and then assign the values to the member variables in them. 
+This is not only a example of good practice but also it ensures that by no one outside of 
+the code can perform any change to the member variables. For example: In the DIY part of 
+this worksop for the food module. We create public varibales / functions such as 
+setEmpty, set, setCalories etc and there are also private member functions / variables 
+which are food name, the number of calories and the time for it to consume and setName 
+function which holds a very important part in this workshop. The setName function is 
+used to set the name of the food by passing the pointer array and it is backed up by 
+strnCpy which is a cstring libray function. Overall, this workshop made me understand 
+a lot of things about privacy and how to access member function in a class even though 
+they are private or public.

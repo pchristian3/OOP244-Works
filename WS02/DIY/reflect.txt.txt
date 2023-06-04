@@ -1,0 +1,20 @@
+/*
+Name : Prarthan Dhaval Christian
+Id   : 175063213
+Email: pchristian3@myseneca.ca
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+In this workshop 2 DIY submission I used the concepts of the things which I learned 
+in the class on Wednesday. The main concept which I learnd during the 
+class was dynamic memory allocation and deallocation. In this workshop it 
+played a very important part as in a function we are using dynamic memory 
+concpet to make this code run in a proper way without any errors.
+Also, during this week I also learned about the Function Overloading. 
+Function overloading means we are creating a function of same name but 
+we are passing different parameters every time when we call that function.
+This workshop turned out to be very useful in that. The concept of the 
+function overload in the DIY part of this workshop can be understand as I 
+created two load function which turns out to be a perfect example for function overload 
+as both have the same name but different parameters.
+
