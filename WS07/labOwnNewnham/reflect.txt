@@ -1,0 +1,17 @@
+/*
+Name : Prarthan Dhaval Christian
+Id : 175063213
+Email : pchristian3@myseneca.ca
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+In this workshop was mostly based on inheritance. In this workshop the concept of Inheritance is used in a very great manner which 
+lead me to sharpen my skills. In this workshop the base class is MotorVehicle and the derived class is Truck. In this workshop the 
+derived calss inherits the properties and behaviours of the base class and can add its own unique properties and behaviour or modify 
+the ones which are inherited from the base class. 
+
+Also in this week's workshop I learned about custom input and outpur operator which can be also said as i/o operators. 
+In this workshop I defined the output function which is "<<" and the input function which is ">>". Instead of any iostream
+this workshop is executed where the input and output functions were done by me. 
+
+This workshop is the perfect combination to undertsand the concepts of inheritance, shadowing as well as i/o operators.

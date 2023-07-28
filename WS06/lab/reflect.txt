@@ -1,0 +1,22 @@
+/*
+Name : Prarthan Dhaval Christian
+Id : 175063213
+Email : pchristian3@myseneca.ca
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+This week I basically learned about class independence in object-oriented programming and the need of 
+resource management. I discovered resource instance pointers and dynamically allocated RAM. It distinguishes 
+between deep and shallow copying and emphasises the relevance of deep copying for resource variables.
+
+This week also covered the copy constructor and copy assignment operator, which are responsible for copying 
+data between objects. It recommends localising common code and dealing with transitory objects, and it forbids
+copying in certain class designs.
+
+In addition, the ppt presentation presented input/output operators, compositions, and associations in class, 
+as well as their relationships. It describes how to utilise the iostream and fstream header files for
+standard and file input/ output operations, respectively.
+
+Lastly, I learned about design considerations, such as flexibility in selecting stream objects and resolving
+scope for classes and objects defined in header files.
+In summary, this week was an overview of resource management, deep copying, input/output operations, and design considerations in C++.

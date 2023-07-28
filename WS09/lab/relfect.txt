@@ -1,0 +1,14 @@
+/*
+Name : Prarthan Dhaval Christian
+Id : 175063213
+Email : pchristian3@myseneca.ca
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+
+The main purpose of this workshop is to read from a file with the help of C++.
+This workshop helped me to understand the key concpets of standard libray.
+Also as the finals are coming up this was a good way to brush up my skills on
+copy constructor, assignment operator and destructor which is also known as 
+the rule of three. Also I faced some errors in this Workshop but I was able to 
+solve it. 

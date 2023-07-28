@@ -1,0 +1,17 @@
+
+/*
+Name : Prarthan Dhaval Christian
+Id   : 175063213
+Email: pchristian3@myseneca.ca
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+In this week I mostly learned about Operator Overloadin in C++ which allows us to 
+redefine the behaviour for a user defined types. In this week module, I leared that I
+can overload most of the operators, including arithmetic operators. Both of the workshops 
+which is DIY and the labs containes a good amout of practice of this weekely topic. 
+To overload an operator, you define a specail member function called an operator 
+function. 
+Operator overload can be simply explained as by overloading, you can specify how it 
+should behaver for your specific class or the data type. It has the same name yet 
+the arguments passed to it would be differnt the function of it would be different.

@@ -1,0 +1,10 @@
+class MotorVehicle{
+private::
+    char licensePlate[9];
+    char* address[64];
+    int year;
+public::
+      MotorVehicle();
+
+
+}

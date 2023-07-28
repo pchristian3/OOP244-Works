@@ -1,0 +1,248 @@
+------------SHAPE---------------
+
+shape.h
+
+#ifndef SDDS_SHAPE_H
+#ifndef SDDS_SHAPE_H
+
+#incluce<iostream>
+
+namespace sdds{
+
+  class Shape{
+    
+      public:
+      
+      virtual void draw (std:: ostream& ostr) const =0;
+      vitrual void getSpecs(std::istream& istr) = 0;
+      virtual ~Shape(){};
+      
+  };
+  
+  std::ostream& operator<<(std::ostream& ostr, const Shape&);
+	std::istream& operator>>(std::istream& istr, Shape&);
+}
+#endif //!SDDS_SHAPE_H_
+
+shape.cpp
+
+#include<shape.h>
+
+using namespace std;
+
+namespace sdds{
+
+  std::ostream& operator<<(::ostream& ostr, const Shape& shape) {
+		shape.draw(ostr);
+		return ostr;
+	}
+
+	std::istream& operator>>(std::istream& istr, Shape& shape){
+		shape.getSpecs(istr);
+		return istr;
+	}
+}
+
+---------------LblShape-------------------------
+
+LblShape.h
+
+#ifndef SDDS_LBLSHAPE_H
+#ifndef SDDS_LBLSHAPE_H
+
+#incluce<iostream>
+
+namespace sdds{
+  
+  class LblShape : public Shape{
+    
+    private:
+      char* m_label = nullptr;
+      
+     protected:
+      const char* label() const;
+      
+     public:
+      LblShape(const char* cstring);
+      ~LblShape();
+      LblShape(LblShape& I ) = delete;
+      LblShape& operator = (LblShape& other) = delete;
+      void getSpecs(std::istream& istr);
+      
+      
+  };
+ 
+}
+#endif //!SDDS_LBLSHAPE_H_
+
+
+LblShape.cpp
+
+#include<LblShape.h>
+#include<cstring>
+
+using namespace std;
+
+namespace sdds{
+
+  const char* LblShape:: label() const{
+    return m_label;
+  };
+  
+ LblShape:: LblShape(char* cstring){
+  if(cstring){
+    m_label = new char[strlen{cstring} + 1];
+    strCpy(m_label, cstring);
+    
+  }
+ }
+ 
+ LblShape::~LblShape(){
+  delete[] m_label;
+ }
+ 
+ void LblShape::getSpecs(std::istream& istr){
+  char str[1024] = {};
+	istr.getline(str, 1023, ',');
+	delete[] m_label;
+	m_label = new char[stelen(str)+1];
+	strcpy(m_label, str);
+ }
+}
+
+--------------------Line---------------------------
+
+Line.h
+
+#ifndef SDDS_LINE_H
+#ifndef SDDS_LINE_H
+
+namespace sdds{
+  class Line : public LblShape{
+    private:
+      int m_length;
+      
+     public:
+     Line();
+     Line(const char* cstring, int length);     
+     void getSpecs(std::istream& istr);
+  };
+}
+
+#endif //!SDDS_LINE_H
+
+Line.cpp
+
+
+#include<Line.h>
+
+using namespace std;
+
+namespace sdds{
+
+  Line::Line(){
+    m_length = 0;
+  }
+  
+  Line::Line(const char* cstring, int length) : LblShape(cstring) {
+    m_length = length'
+  }
+  
+  void Line:: getSpecs(std::istream& istr){
+    LlbLine::getSpecs(istr);
+    istr >> m_length;
+    while(istr.get()!='\n');
+  }
+  
+  void Line:: draw (std:: ostream& ostr) const{
+    if(m_length >0 && label() != nullptr){
+      ostr<<label()<<endl;
+      ostr.widhth(m_length);
+      ostr.fill('=');
+      ostr<<'=';
+    }
+  }
+  
+}
+
+-----------------------Rectangle---------------------
+
+Recatangle.h
+
+#ifndef SDDS_RECTANGLE_H
+#ifndef SDDS_RECTANGLE_H
+
+namespace sdds{
+  class Rectangle : public LblShape{
+    private:
+      int m_width;
+      int m_height;
+    public:
+      Rectangle();
+      Rectangle(const char* cstring, int width, int height);
+      void getSpecs(std::istream& istr);
+      void draw (std:: ostream& ostr) const;
+      
+  };
+}
+#endif //!SDDS_RECTANGLE_H
+
+Rectangle.cpp
+
+#include<Rectangle.h>
+#include<iostream>
+
+using namespace std;
+
+namespace sdds{
+  Rectangle::Rectangle(){
+    m_width = 0;
+    m_height = 0;
+  }
+  
+  Rectangle::Rectangle(const char* cstring, int width, int height) : LblShape(cstring){
+   m_width = width;
+   m_height = height;
+   if(m_height < 3 || m_width < int strlen(label()) + 2) 
+   {
+      m_width = 0;
+      m_height = 0;
+   }
+  }
+  
+  void Rectangle::getSpecs(std::istream& istr){
+    LblShape::getSpecs(istr);
+    istr >> m_width;
+    istr.ignore();
+    istr >> m_length;
+    while(istr.get()!='\n');
+  }
+  
+  void Rectangle:: draw(std:: ostream& ostr) const{
+    if(m_width > 0 && m_height < 0){
+      cout << '+';
+      cout.widht(m_width - 2);
+      cout.fill('-');
+      cout << '-' << '+' << endl;
+      
+      cout<<'|';
+      cout.setf(ios::left);
+      cout.widht(m_width - 2);
+      cout.fill(' ');
+      cout <<label() << '|' << endl;
+      cout.unsetf(ios::left);
+      
+      for(int i = 0; i < m_height - 3; i++)
+      {
+        cout<<'|';
+        cout.width(m_widhth - 2);
+        cout.fill(' ');
+        cout << ' ' << '|'  << endl;
+      }
+      cout<<'+';
+      cout.widht(m_width - 2);
+      cout.fill('-');
+      cout<<'-' <<'+'; 
+    }
+  }
+}

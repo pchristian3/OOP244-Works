@@ -1,0 +1,17 @@
+/*
+Name : Prarthan Dhaval Christian
+Id   : 175063213
+Email: pchristian3@myseneca.ca
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+
+This workshop was based on inheritance concept which I found it very easy 
+as while this concept was taught in the class I was very attentive 
+this workshop is the best way to understand the concept of inheritance. 
+Inheritance can be simply means that you copy the same structure to another
+structure or class. The copied class is known as the derived class and the 
+class which was copied is known as base class. 
+
+There are many concepts in inheritance which was covered during the lecture 
+and also the workshop. I have understood this concept perfectly now.
